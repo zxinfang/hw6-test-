@@ -1,0 +1,422 @@
+ * {
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     font-family: verdana, arial, verdana;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ 
+ @media all {
+     .wrapper {
+         width: device-width;
+         min-width: 950px;
+         height: 100%;
+         min-height: 200px;
+     }
+ }
+ 
+ header {
+     max-width: 100%;
+     background-color: black;
+     height: 28px;
+     font-size: 12px;
+ }
+ 
+ header ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 950px;
+     height: 28px;
+     margin: 0 auto;
+ }
+ 
+ header li {
+     display: inline;
+     margin: 3px;
+     color: white;
+ }
+ 
+ header hr {
+     border: 0.1px solid white;
+     height: 12px;
+     margin: 5px;
+ }
+ 
+ header .left,
+ header .right {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ header .right {
+     align-items: center;
+ }
+ 
+ header a {
+     color: white;
+     text-decoration-line: none;
+ }
+ 
+ header .right li:last-of-type a {
+     color: red;
+ }
+ 
+ header a:hover {
+     text-decoration-line: underline;
+ }
+ 
+ .p1 {
+     height: 28px;
+     vertical-align: middle;
+ }
+ 
+ .content {
+     width: 100%;
+     min-width: 950px;
+     height: 100%;
+     min-height: 100%;
+ }
+ 
+ .logo {
+     width: 290px;
+     height: 100px;
+ }
+ 
+ .content .top {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 950px;
+     margin-top: 30px;
+     margin: 0 auto;
+ }
+ 
+ .top .right ul {
+     display: flex;
+     flex-direction: row;
+     align-items: baseline;
+     float: left;
+     clear: left;
+     margin-left: 18px;
+ }
+ 
+ .top .right li {
+     display: inline;
+     font-size: 14px;
+     font-weight: bolder;
+     margin: 14px;
+ }
+ 
+ .top .right hr {
+     height: 10px;
+     border: 0.5px solid rgb(224, 224, 224);
+ }
+ 
+ .top .right a,
+ .content-in ul a,
+ .more a {
+     color: black;
+     text-decoration-line: none;
+ }
+ 
+ .content .right li:last-of-type a {
+     color: red;
+     font-size: 16px;
+ }
+ 
+ .logo2 {
+     float: right;
+     height: 60px;
+     width: 210px;
+ }
+ 
+ .p2 {
+     width: 100%;
+     min-width: 300px;
+     margin-top: 5px;
+ }
+ 
+ .content .picture {
+     width: 950px;
+     margin: 0 auto;
+ }
+ 
+ .content-in {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     margin: 0 auto;
+     width: 950px;
+     margin-top: 50px;
+ }
+ 
+ .content-in .left {
+     width: 227px;
+     height: 322px;
+     font-size: 12px;
+ }
+ 
+ .news {
+     font-weight: bolder;
+     color: gray;
+     margin-bottom: 15px;
+ }
+ 
+ .content-in ul a:hover,
+ .more a:hover {
+     color: gray;
+     text-decoration-line: underline;
+     margin: 5px;
+ }
+ 
+ .content-in .hire,
+ .content-in .work {
+     background-color: #f8661d;
+     max-width: 35px;
+     font-size: 12px;
+     text-align: center;
+     border-radius: 3px;
+ }
+ 
+ .content-in .work {
+     background-color: #1aa9b7;
+ }
+ 
+ .content-in .hire a,
+ .content-in .work a {
+     color: white;
+ }
+ 
+ .content-in .hire a:hover,
+ .content-in .work a:hover {
+     color: white;
+     text-decoration-line: underline;
+ }
+ 
+ .more {
+     float: right;
+ }
+ 
+ .hr {
+     margin-left: 20px;
+     border-style: solid gray;
+ }
+ 
+ .content-in .right {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .row {
+     display: flex;
+     flex-direction: row;
+     width: 100px;
+     font-size: 12px;
+     margin-left: 30px;
+ }
+ 
+ .row-in {
+     border: 1px solid black;
+     margin-left: 13px;
+     padding: 5px;
+     width: 152px;
+     height: 322px;
+ }
+ 
+ .row-in img {
+     display: block;
+     width: 140px;
+     height: 150px;
+     margin-bottom: 5px;
+ }
+ 
+ .row-in hr {
+     border-style: 1px dotted gray;
+ }
+ 
+ .row-in li {
+     margin: 5px;
+ }
+ 
+ .row-in a:first-of-type {
+     font-weight: bolder;
+     font-size: 13px;
+ }
+ 
+ .row-in li:last-of-type {
+     margin-top: 10px;
+ }
+ 
+ .row-in:last-of-type {
+     border: none;
+ }
+ 
+ .row-in:last-of-type img {
+     width: 160px;
+     height: 322px;
+     margin-top: -5px;
+ }
+ 
+ .content_hr {
+     width: 955px;
+     border-style: 1px dotted black;
+     margin: 0 auto;
+     margin-top: 30px;
+ }
+ 
+ .pagetop {
+     width: 100%;
+     min-width: 950px;
+     height: 21px;
+     display: flex;
+     font-size: 12px;
+     color: gray;
+     background-color: #FCFCFC;
+ }
+ 
+ .pagetop a {
+     display: flex;
+     justify-content: flex-end;
+     width: 950px;
+     margin: 0 auto;
+ }
+ 
+ .pagetop img {
+     width: 18px;
+     height: 18px;
+     vertical-align: middle;
+ }
+ 
+ .content_in {
+     width: 100%;
+     min-width: 950px;
+     background-color: #fcfcfa;
+ }
+ 
+ .bottom {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .bottom-in {
+     width: 186px;
+     height: 377px;
+     margin: 13px;
+ }
+ 
+ .bottom-in img {
+     width: 188px;
+     height: 49px;
+ }
+ 
+ .bottom-in a {
+     color: black;
+     text-decoration-line: none;
+ }
+ 
+ .bottom-in a:hover {
+     color: gray;
+     text-decoration-line: underline;
+ }
+ 
+ .bottom-in li:last-of-type {
+     float: right;
+ }
+ 
+ .bottom-in:last-of-type .li {
+     float: left;
+     clear: right;
+ }
+ 
+ .bottom-in:last-of-type hr {
+     clear: left;
+ }
+ 
+ .bottom-in li {
+     margin: 3px;
+     font-size: 13px;
+ }
+ 
+ .bottom-in hr {
+     border-style: 1px dotted gray;
+ }
+ 
+ .bp {
+     width: 100%;
+     min-width: 950px;
+     display: flex;
+     justify-content: center;
+     margin-top: -10px;
+ }
+ 
+ .bp img {
+     width: 70px;
+ }
+ 
+ footer .picture {
+     display: flex;
+     justify-content: flex-end;
+     margin: 0 auto;
+     width: 950px;
+     height: 34px;
+     background-color: #fcfcfa;
+     margin-bottom: -13px;
+ }
+ 
+ footer .picture img {
+     width: 98px;
+     height: 31px;
+     padding: 2px;
+     z-index: 5;
+ }
+ 
+ .footer-in {
+     width: 100%;
+     min-width: 950px;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background-color: black;
+     color: white;
+ }
+ 
+ footer ul {
+     width: 100%;
+     height: 40px;
+     margin-top: 5px;
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ footer li {
+     display: inline;
+     font-size: 12px;
+     padding-top: 10px;
+ }
+ 
+ footer hr {
+     border: 0.5px solid white;
+     height: 10px;
+     width: 0;
+     margin: 14px 5px;
+ }
+ 
+ footer a {
+     color: white;
+     text-decoration-line: none;
+ }
+ 
+ footer a:hover {
+     text-decoration-line: underline;
+ }
