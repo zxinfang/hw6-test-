@@ -14,13 +14,11 @@
      list-style: none;
  }
  
- @media all {
-     .wrapper {
-         width: device-width;
-         min-width: 950px;
-         height: 100%;
-         min-height: 200px;
-     }
+ .wrapper {
+     width: 100%;
+     min-width: 980px;
+     height: 100%;
+     min-height: 200px;
  }
  
  header {
